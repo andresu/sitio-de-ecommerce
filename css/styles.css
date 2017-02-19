@@ -1,0 +1,57 @@
+.btn-group-vertical{
+	width:100%;
+}
+.btn-group-vertical .btn{
+	text-align: left
+}
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-form{
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+.navbar-inverse{
+	border:none;
+}
+
+.margin-top-05 { margin-top: 0.5em; }
+.margin-top-10 { margin-top: 1.0em; }
+.margin-top-15 { margin-top: 1.5em; }
+.margin-top-20 { margin-top: 2.0em; }
+.margin-top-25 { margin-top: 2.5em; }
+.margin-top-30 { margin-top: 3.0em; }
+.btn span.badge{
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+ul{
+	list-style-type: none;
+}
+
+li.precio span {
+	font-weight: bold;
+}
+
+.buscador form .form-group{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.buscador .form-group input{
+	border-radius: 5px 0 0 5px;
+	float: left;
+	height: 4.2rem;
+	width: 85%;
+}
+
+.buscador .form-group button{
+	border-radius:0 5px 5px 0;
+	float: right;
+	height: 4.2rem;
+	width: 15%;
+}

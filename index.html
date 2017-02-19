@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Sitio de E-commerce</title> 
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <!--   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <style>
+</style>
+</head>
+<body>
+  <section class="container-fluid navbar-inverse">
+    <div class="container">
+      <div class="row">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Desplegar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">E-commerce</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Canasta</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </div>
+
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <!--parte izquierda-->
+      <div class="container col-md-4">
+        <div class="row margin-top-20">
+          <div class="col-md-12 buscador">
+
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Buscar">
+                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+              <div class="input-group-btn">
+
+              </div>         
+            </form>
+
+          </div>
+        </div>
+        <div class="row margin-top-15 hidden-xs hidden-sm">
+          <div class="col-md-12">
+            <h3>Categorías</h3>
+            <div class="btn-group-vertical" role="group" aria-label="...">
+              <button type="button" class="btn btn-primary btn-lg">Todos <span class="badge">100</span></button>
+              <button type="button" class="btn btn-default btn-lg">Hombre <span class="badge">4</span></button>
+              <button type="button" class="btn btn-default btn-lg">Mujer <span class="badge">12</span></button>
+              <button type="button" class="btn btn-default btn-lg">Hipster <span class="badge">24</span></button>
+              <button type="button" class="btn btn-default btn-lg">Metal <span class="badge">6</span></button>
+              <button type="button" class="btn btn-default btn-lg">Universidad <span class="badge">5</span></button>
+              <button type="button" class="btn btn-default btn-lg">Deportiva <span class="badge">8</span></button>
+              <button type="button" class="btn btn-default btn-lg">Rayas <span class="badge">11</span></button>
+              <button type="button" class="btn btn-default btn-lg">Fit <span class="badge">19</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--parte derecha-->
+      <div class="container col-md-8">
+        <div class="row margin-top-20">
+          <div class="col-md-12">
+
+            <!-- Carrusel -->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                  <img src="assets/banner-slider-1.jpg" alt="T-shirt-ACDC">
+                </div>
+
+                <div class="item">
+                  <img src="assets/banner-slider-2.jpg" alt="T-shirt-Nirvana">
+                </div>
+
+                <div class="item">
+                  <img src="assets/banner-slider-3.jpg" alt="T-shirt-Kiss">
+                </div>
+
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="row margin-top-20">
+          <div class="col-md-12">
+            <!--fila 1-->
+            <div class="row">
+              <!--producto 1-->
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <img src="assets/camiseta-1.jpg" class="img-responsive" alt="">
+                    <h4>Hipster Ultimate</h4>
+                    <p>La camiseta ideal para hipster.</p>
+
+                    <div class="btn-group primary" role="group" aria-label="...">
+
+                      <button type="button" class="btn btn-primary">$299 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                      </button>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                        Detalles
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Hipster Ultimate</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="alert alert-info" role="alert">
+                                    <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Este producto está agotado</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <div class="col-sm-5 col-md-5">
+                                  <img src="assets/camiseta-1.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 margin-top-20">
+                                  <ul class="col-md-12">
+                                    <li class="precio"><p>Precio: <span>$299</span></p></li>
+                                    <li>Calificación:
+                                      <div class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas"<span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                      </div>
+                                    </li>
+                                    <li class="margin-top-10">
+                                      <span class="label label-warning">Hipters</span>
+                                      <span class="label label-default">Deportivas</span>
+                                    </li>
+                                    <li class="margin-top-10"><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" class="active"><a href="#descripcion" aria-controls="descripcion" role="tab" data-toggle="tab">Descripción</a></li>
+                                  <li role="presentation"><a href="#comentarios" aria-controls="comentarios" role="tab" data-toggle="tab">Comentarios</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane active col-md-12 margin-top-15" id="descripcion">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus quo minus soluta, rerum iure repellat, numquam veniam nulla omnis alias, minima ducimus quam perspiciatis praesentium asperiores aut ratione culpa.</p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane col-md-12 margin-top-15" id="comentarios">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">Andrés Urrea <span>comento hace 2 días.</span></h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>¿Tiene algún costo adicional el envío fuera de Bogotá?</p>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <textarea class="form-control" rows="3" placeholder="Ingrese su comentario"></textarea>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--producto 2-->
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <img src="assets/camiseta-2.jpg" class="img-responsive" alt="">
+
+                    <h4>On Motion Live</h4>
+                    <p>Perfecta para salidas rocosas.</p>
+
+                    <div class="btn-group primary" role="group" aria-label="...">
+
+                      <button type="button" class="btn btn-primary">$299 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+                        Detalles
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">On Motion Live</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="alert alert-success" role="alert">
+                                    <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Con unidades disponibles.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <div class="col-sm-5 col-md-5">
+                                  <img src="assets/camiseta-2.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 margin-top-20">
+                                  <ul class="col-md-12">
+                                    <li class="precio"><p>Precio: <span>$299</span></p></li>
+                                    <li>Calificación:
+                                      <div class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas"<span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                      </div>
+                                    </li>
+                                    <li class="margin-top-10">
+                                      <span class="label label-success">Aventureros</span>
+                                      <span class="label label-default">Deportivas</span>
+                                    </li>
+                                    <li class="margin-top-10"><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" class="active"><a href="#descripcion2" aria-controls="descripcion2" role="tab" data-toggle="tab">Descripción</a></li>
+                                  <li role="presentation"><a href="#comentarios2" aria-controls="comentarios2" role="tab" data-toggle="tab">Comentarios</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane active col-md-12 margin-top-15" id="descripcion2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus quo minus soluta, rerum iure repellat, numquam veniam nulla omnis alias, minima ducimus quam perspiciatis praesentium asperiores aut ratione culpa.</p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane col-md-12 margin-top-15" id="comentarios2">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">Andrés Urrea <span>comento hace 2 días.</span></h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>¿Tiene algún costo adicional el envío fuera de Bogotá?</p>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <textarea class="form-control" rows="3" placeholder="Ingrese su comentario"></textarea>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--producto 3-->
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <img src="assets/camiseta-3.jpg" class="img-responsive" alt="">
+
+                    <h4>Underground Max</h4>
+                    <p>Para los amantes del underground.</p>
+
+                    <div class="btn-group primary" role="group" aria-label="...">
+
+                      <button type="button" class="btn btn-primary">$299 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3">
+                        Detalles
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Underground Max</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="alert alert-warning" role="alert">
+                                    <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Este producto está agotado</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <div class="col-sm-5 col-md-5">
+                                  <img src="assets/camiseta-3.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 margin-top-20">
+                                  <ul class="col-md-12">
+                                    <li class="precio"><p>Precio: <span>$299</span></p></li>
+                                    <li>Calificación:
+                                      <div class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas"<span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                      </div>
+                                    </li>
+                                    <li class="margin-top-10">
+                                      <span class="label label-primary">Underground</span>
+                                      <span class="label label-default">Deportivas</span>
+                                    </li>
+                                    <li class="margin-top-10"><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" class="active"><a href="#descripcion3" aria-controls="descripcion3" role="tab" data-toggle="tab">Descripción</a></li>
+                                  <li role="presentation"><a href="#comentarios3" aria-controls="comentarios3" role="tab" data-toggle="tab">Comentarios</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane active col-md-12 margin-top-15" id="descripcion3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus quo minus soluta, rerum iure repellat, numquam veniam nulla omnis alias, minima ducimus quam perspiciatis praesentium asperiores aut ratione culpa.</p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane col-md-12 margin-top-15" id="comentarios3">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">Andrés Urrea <span>comento hace 2 días.</span></h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>¿Tiene algún costo adicional el envío fuera de Bogotá?</p>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <textarea class="form-control" rows="3" placeholder="Ingrese su comentario"></textarea>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix hidden-xs hidden-sm"></div>
+
+              <!--producto 4-->
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <img src="assets/camiseta-4.jpg" class="img-responsive" alt="">
+                    <h4>Santo Domingo Tigers</h4>
+                    <p>Retro style.</p>
+
+                    <div class="btn-group primary" role="group" aria-label="...">
+
+                      <button type="button" class="btn btn-primary">$299 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4">
+                        Detalles
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Santo Domingo Tigers</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="alert alert-danger role="alert">
+                                    <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Solo disponible para compra online.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <div class="col-sm-5 col-md-5">
+                                  <img src="assets/camiseta-4.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 margin-top-20">
+                                  <ul class="col-md-12">
+                                    <li class="precio"><p>Precio: <span>$299</span></p></li>
+                                    <li>Calificación:
+                                      <div class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas"<span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                      </div>
+                                    </li>
+                                    <li class="margin-top-10">
+                                      <span class="label label-danger">Vintage</span>
+                                      <span class="label label-default">Deportivas</span>
+                                    </li>
+                                    <li class="margin-top-10"><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" class="active"><a href="#descripcion4" aria-controls="descripcion4" role="tab" data-toggle="tab">Descripción</a></li>
+                                  <li role="presentation"><a href="#comentarios4" aria-controls="comentarios4" role="tab" data-toggle="tab">Comentarios</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane active col-md-12 margin-top-15" id="descripcion4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus quo minus soluta, rerum iure repellat, numquam veniam nulla omnis alias, minima ducimus quam perspiciatis praesentium asperiores aut ratione culpa.</p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane col-md-12 margin-top-15" id="comentarios4">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">Andrés Urrea <span>comento hace 2 días.</span></h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>¿Tiene algún costo adicional el envío fuera de Bogotá?</p>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <textarea class="form-control" rows="3" placeholder="Ingrese su comentario"></textarea>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix hidden-md hidden-lg"></div>
+              <!--producto 5-->
+              <div class="col-xs-6 col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <img src="assets/camiseta-5.jpg" class="img-responsive" alt="">
+
+                    <h4>Sport Fire</h4>
+                    <p>La más increible colleción.</p>
+
+                    <div class="btn-group primary" role="group" aria-label="...">
+
+                      <button type="button" class="btn btn-primary">$299 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal5">
+                        Detalles
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h4 class="modal-title" id="myModalLabel">Sport Fire</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="alert alert-info" role="alert">
+                                    <p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Este producto está agotado</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <div class="col-sm-5 col-md-5">
+                                  <img src="assets/camiseta-5.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="col-sm-7 col-md-7 margin-top-20">
+                                  <ul class="col-md-12">
+                                    <li class="precio"><p>Precio: <span>$299</span></p></li>
+                                    <li>Calificación:
+                                      <div class="ec-stars-wrapper">
+                                        <a href="#" data-value="1" title="Votar con 1 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="2" title="Votar con 2 estrellas"<span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="3" title="Votar con 3 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="4" title="Votar con 4 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                        <a href="#" data-value="5" title="Votar con 5 estrellas"><span class="glyphicon glyphicon-star"></span></a>
+                                      </div>
+                                    </li>
+                                    <li class="margin-top-10">
+                                      <span class="label label-info">Casuales</span>
+                                      <span class="label label-default">Deportivas</span>
+                                    </li>
+                                    <li class="margin-top-10"><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="row margin-top-20">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li role="presentation" class="active"><a href="#descripcion5" aria-controls="descripcion5" role="tab" data-toggle="tab">Descripción</a></li>
+                                  <li role="presentation"><a href="#comentarios5" aria-controls="comentarios5" role="tab" data-toggle="tab">Comentarios</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                  <div role="tabpanel" class="tab-pane active col-md-12 margin-top-15" id="descripcion5">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus quo minus soluta, rerum iure repellat, numquam veniam nulla omnis alias, minima ducimus quam perspiciatis praesentium asperiores aut ratione culpa.</p>
+                                  </div>
+                                  <div role="tabpanel" class="tab-pane col-md-12 margin-top-15" id="comentarios5">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h3 class="panel-title">Andrés Urrea <span>comento hace 2 días.</span></h3>
+                                      </div>
+                                      <div class="panel-body">
+                                        <p>¿Tiene algún costo adicional el envío fuera de Bogotá?</p>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <textarea class="form-control" rows="3" placeholder="Ingrese su comentario"></textarea>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <!-- <script src="js/bootstrap.min.js"></script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+</body>
+</html>
